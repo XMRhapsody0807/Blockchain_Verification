@@ -16,3 +16,11 @@ git clone https://github.com/XMRhapsody0807/Blockchain_Verification.git
 go run .
 ```
 
+## Config.go Configuration
+```
+    APIEndpoint:  "https://services.tokenview.io/vipapi/tx",  //使用的区块链浏览器平台API
+		APIKey:       "", //APIKEY
+		ChainSymbol:  "bsc", // 默认比特币，可根据需要修改为eth、trx等  //hash地址是哪种类型
+		CSVDirectory: "./data",  //读取csv文件的目录
+		LogFile:      "./mismatch.log", //输出的log , 用于查询有哪些校验未通过
+```
